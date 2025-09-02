@@ -1,0 +1,26 @@
+.container {
+    display: grid; /* or inline-grid*/
+    grid-template-columns: 
+        1fr 1fr
+        minmax(10px, 1fr) 3fr
+        repeat(5, 1fr)
+        50px auto 100px 1fr;
+
+    /* e.g.
+    grid-template-rows:
+        min-content 1fr min-content
+        100px 1fr max-content
+    */
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.item-2 {
+    flex-grow: 2;
+}
+
+.item-3 {
+    flex-grow: 3;
+}
